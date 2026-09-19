@@ -163,12 +163,39 @@ export function LoginCard() {
       <p className="text-center text-xs sm:text-sm text-zinc-500">
         Don&apos;t have an account?{" "}
         <Link
-          href="#signup"
+          href="/early-access"
           className="font-bold text-amber-600 hover:text-amber-700 transition-colors"
         >
           Sign up free
         </Link>
       </p>
+
+      {/* 6. Quick Portal Access for Demo */}
+      <div className="border-t border-zinc-100 pt-4 flex flex-col gap-2">
+        <span className="text-[11px] font-bold text-zinc-400 uppercase tracking-wider text-center">
+          Instant Portal Preview
+        </span>
+        <div className="grid grid-cols-3 gap-2">
+          <Link
+            href="/candidate"
+            className="py-2 px-1 text-center rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-950 text-xs font-bold border border-emerald-200 transition-colors"
+          >
+            Candidate
+          </Link>
+          <Link
+            href="/recruiter"
+            className="py-2 px-1 text-center rounded-xl bg-blue-50 hover:bg-blue-100 text-blue-950 text-xs font-bold border border-blue-200 transition-colors"
+          >
+            Recruiter
+          </Link>
+          <Link
+            href="/admin"
+            className="py-2 px-1 text-center rounded-xl bg-amber-50 hover:bg-amber-100 text-amber-950 text-xs font-bold border border-amber-200 transition-colors"
+          >
+            Admin
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

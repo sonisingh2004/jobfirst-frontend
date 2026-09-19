@@ -141,31 +141,31 @@ export function Footer() {
               </ul>
             </div>
 
-            {/* Column 3: Company */}
+            {/* Column 3: Company & Legal */}
             <div className="anime-footer-item flex flex-col gap-3" style={{ opacity: 0 }}>
               <p className="text-xs font-bold uppercase tracking-wider text-zinc-900">
-                Company
+                Company & Legal
               </p>
               <ul className="flex flex-col gap-2.5 text-sm text-zinc-600">
                 <li>
-                  <Link href="#" className="hover:text-zinc-950 transition-colors">
+                  <Link href="/terms" className="hover:text-zinc-950 transition-colors">
+                    Terms & Conditions
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/privacy" className="hover:text-zinc-950 transition-colors">
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/#faq" className="hover:text-zinc-950 transition-colors">
+                    FAQ
+                  </Link>
+                </li>
+                <li>
+                  <a href="mailto:hello@jobfirst.ai" className="hover:text-zinc-950 transition-colors">
                     Contact
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-zinc-950 transition-colors">
-                    Blog
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-zinc-950 transition-colors">
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link href="#" className="hover:text-zinc-950 transition-colors">
-                    Careers
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -223,13 +223,23 @@ export function Footer() {
 
         {/* Bottom Copyright Row */}
         <div className="anime-footer-item border-t border-zinc-100 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-500" style={{ opacity: 0 }}>
-          <p>© 2025 jobfirst Technologies Pvt Ltd</p>
-          <a
-            href="mailto:hello@jobfirst.ai"
-            className="hover:text-zinc-800 transition-colors"
-          >
-            hello@jobfirst.ai
-          </a>
+          <p>© 2025 jobfirst Technologies Pvt Ltd. All rights reserved.</p>
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+            <Link href="/terms" className="hover:text-zinc-900 transition-colors">
+              Terms & Conditions
+            </Link>
+            <span className="text-zinc-300">•</span>
+            <Link href="/privacy" className="hover:text-zinc-900 transition-colors">
+              Privacy Policy
+            </Link>
+            <span className="text-zinc-300">•</span>
+            <a
+              href="mailto:hello@jobfirst.ai"
+              className="hover:text-zinc-900 transition-colors"
+            >
+              hello@jobfirst.ai
+            </a>
+          </div>
         </div>
       </div>
 
